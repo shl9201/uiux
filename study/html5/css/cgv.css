@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* 기본설정 */
+body{background-color: #fdfcf0;font-size: 12px;} /*1점*/
+#wrap{width:1000px;margin:0 auto;} /*100점*/
+
+/* header */
+header>h1{font-size: 15px;padding:50px 0px 20px 0px;} /*2점*/
+header>h1+p{font-weight: 800;line-height: 140%;} /*3점*/
+
+/* 본문영역 */
+section{margin:20px 0px;} /*1점*/
+section>.guide{border:1px solid #e1ddd3;padding:40px 0;border-right: none;border-left:none;} /*11점*/
+section>.guide>h3{margin-left:30px;color:#764d25;font-size: 13px;margin-bottom: 20px;} /*12점*/
+section>.guide>ul{margin-left:30px;} /*12점*/
+section>.guide>ul>li{font-weight: 600;line-height: 1.6;} /*13점*/
+section>.guide>ul>li>span{display: block;text-indent: 8px;} /*14점*/
+
+section>.contact{margin-top:30px;} /*11점*/
+section>.contact>h3{font-size: 13px;text-indent:30px;margin-bottom: 20px;} /*12점*/
+section>.contact>div{border:1px solid #e1ddd3;margin:0 15px 20px;padding:20px 0 20px 20px;} /*12점*/
+
+/*문맥 선택자는 자손을 선택할 때 사용하는데 한칸 공백으로 표현한다.
+주의 : 선택시 중복되는 요소를 반드시 확인하며 신중히, 문제가 없다는 것이 확실할 때 사용한다.*/
+.contact li{height: 18px;line-height: 18px;} /*11점*/
+section>.contact>div>p{margin-top:10px;font-weight: 600} /*13점*/
+/*h3(margin-bottom:20px;)와 마진 통합형상 발생하므로 margin-top이 의미가 없음*/
+section>.contact>p{border:1px solid #e1ddd3;margin:20px 15px;padding:20px 0 20px 20px;line-height: 18px;} /*12점*/
+
+
+
+/* footer */
+footer>p>a{display: block;width:160px;height: 25px;margin:0 auto;line-height: 25px;text-align: center;border:2px solid #727272;border-radius: 5px;} /*3점*/
+/*버튼을 스타일링 할 때는 built-in CSS를 초기화*/
+footer>p>button{padding:0;background:none;border:none;box-sizing: content-box; outline: none;display: block;width:160px;height: 25px;margin:0 auto;font-size: 12px;line-height: 25px;text-align: center;border:2px solid #727272;border-radius: 5px;} /*3점*/

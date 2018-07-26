@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+*{margin:0;padding:0;}
+html,body{width:100%;height: 100%;}
+#wrap{width:960px;margin:0 auto;}
+header,.left>div:first-child,.left>div:last-child,.cont,footer{text-align: center;border-radius: 10px;}
+header{width:960px;height: 100px;text-align: center;background-color: darkgray;}
+        
+section{margin:10px 0;*zoom:1;}
+section:after{display: block;clear: both;content: '';}
+/*section>article{float: left;}*/
+.left{width:200px;margin-right: 10px;float: left;}
+.cont{width:750px;height: 400px;background-color: yellow;float: left;}
+.left>div:first-child{width:200px;height: 250px;margin-bottom: 10px; background-color:blue;}
+.left>div:last-child{width:200px;height: 140px; background-color:pink;}
+        
+footer{width:960px;height: 100px;background-color: darkred;}
+        
+h2{display: none;}
+
+/*반응형 모바일 */
+@media screen and (max-width:768px){
+    #wrap{width:100%;margin:0;}
+    section.left{float: none;width:100%;}
+    section.cont{float: none;width:100%;}
+}

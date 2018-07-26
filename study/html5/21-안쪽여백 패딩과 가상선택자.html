@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>내용과 테두리사이의 공간 padding</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        
+        #wrap{width:800px;/*border:1px solid #000;*/margin:0 auto}
+        section>h2{margin-bottom: 30px;}
+        section>.frst>h3{border:1px solid red;height: 150px;padding-top:50px;/*패딩 적용시 박스의 크기가 커진다.*/margin-bottom:100px;}
+        
+        /***********가상선택자 연습*********/
+        section>.sec{margin-bottom: 100px;}
+        section>.sec>p>a{display: inline-block;padding:20px 30px;/*outline: 1px solid green;*//*박스사이즈에 영향을 미치지 않는 outline*/ background-color: #0977bc;color:#fff;}
+        section>.sec>p>a:first-child{background-color: #25aae1}
+        section>.sec>p>a:nth-child(2){background-color: #1e83ad}
+        section>.sec>p>a:nth-child(3){background-color: #17688a}
+        section>.sec>p>a:nth-child(4){background-color: #114c65}
+        section>.sec>p>a:last-child{background-color: #0a2e3e}
+        section>.sec>p{margin-top:20px;}
+        #wrap>section>.sec>p>a:hover{background-color: #ccc;color:#000}/*마우스 포인터가 a영역 안으로 진입한다.*/
+        a:link{font-weight: 800}
+        a:visited{color:green !important;}/*한번이라도 클릭한 적이 있다면 적용*/
+        a:active{color:red !important;}/*진입후 마우스 왼쪽 버튼을 누르고 있는 상태*/
+        
+        /************************/
+        h4{height: 100px;line-height: 100px;}
+        span:before{content:'나이는 '}
+        span:after{content:'살 입니다'}
+        
+        .last>p:before{content:'날씬한 기분의 '}
+        .last>p:after{content:' 다이어트 식이섬유'}
+        
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <h1 class="text-center">박스의 안쪽 여백 padding</h1>
+    </header>
+    <section>
+        <h2>내용을 읽기 편하게 하는 역할의 padding</h2>
+        <article class="frst">
+            <h3>패딩을 사용하지 않으면 내용이 경계선에 달라붙는다.</h3>
+        </article>
+        <hr>
+        <article class="sec">
+            <h3>가상선택자를 이용한 셀렉팅</h3>
+            <p>
+                <a href="#1">Home</a><a href="#2">About me</a><a href="#3">Portfolio</a><a href="#4">Design</a><a href="#5">Epilogue</a>  
+            </p>
+            
+        </article>
+        <hr>
+        <article class="last">
+            <h3>가상선택자 :before, :after</h3>
+            <h4><span>20</span></h4>
+            <p>미에로화이바</p>
+        </article>
+    </section>
+    
+    <footer><address class="text-center">&copy;Designed by 서혜림</address></footer>
+    
+    
+</div>
+</body>
+</html>

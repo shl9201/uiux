@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style>
+        img{width:100px;height: auto;}
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <h1>페이지를 이동하는 하이퍼링크</h1>
+    
+    <p><!--a태그에서의 #은 현재페이지를 의미-->
+       <!--https://를 생략하면 안됨-->
+        <a href="https://www.naver.com/">네이버1(외부사이트 이동)</a>
+        <a href="http:/www.naver.com/">네이버2(외부사이트 이동)</a>
+        
+        <a href="https://www.daum.net/" target="_blank">다음(새탭에서 열기)</a>
+        
+        <!--같은 사이트 안에서 내부페이지 이동할 때-->
+        <a href="./%EC%97%B0%EC%8A%B5/prince.html" target="_blank"><img src="./images/prince.png" alt="어린왕자"></a>
+    </p>
+</div>
+</body>
+</html>

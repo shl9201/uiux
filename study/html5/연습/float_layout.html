@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>float을 이용한 레이아웃</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <style>
+        *{margin:0;padding:0}
+        
+        #wrap{width:700px;margin:0 auto;}
+        header{width:700px;height: 150px;border:1px solid black;box-sizing: border-box;margin:30px 0px 10px;}
+        h1{line-height: 150px;text-align: center;}
+        h2{display: none}
+        
+        section{width:700px;*zoom:1;}
+        section:after{display:block;clear: both;content: '';}
+        section>article{float: left;}
+        section>.left{width:250px;height: 400px;margin-right: 10px;line-height: 400px;text-align: center;border:1px solid black;}
+        section>.cont{width:436px;height:400px;line-height: 400px;text-align: center;border:1px solid black;}
+        
+        footer{width:700px;height: 100px;margin-top:10px;line-height: 100px;text-align: center;border:1px solid black;box-sizing: border-box;}
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <h1>메인메뉴 영역</h1>
+    </header>
+    <section>
+       <h2>section영역</h2>
+        <article class="left">
+            <h3>서브메뉴</h3>
+        </article>
+        <article class="cont">
+            <h3>본문내용</h3>
+        </article>
+    </section>
+    <footer>
+        <address>&copy;Designed by Hye-lim Seo</address>
+    </footer>
+</div>
+</body>
+</html>

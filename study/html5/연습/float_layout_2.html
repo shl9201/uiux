@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>float으로 레이아웃 영역 나누기</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="css/float_layout_2.css">
+    <style>
+        *{margin:0;padding:0;}
+        
+        #wrap{width:960px;margin:0 auto;}
+        header,.left>div:first-child,.left>div:last-child,.cont,footer{text-align: center;border-radius: 10px;}
+        header{width:960px;height: 100px;text-align: center;background-color: darkgray;}
+        
+        section{margin:10px 0;*zoom:1;}
+        section:after{display: block;clear: both;content: '';}
+        section>article{float: left;}
+        .left{width:200px;margin-right: 10px;}
+        .cont{width:750px;height: 400px;background-color: yellow;}
+        .left>div:first-child{width:200px;height: 250px;margin-bottom: 10px; background-color:blue;}
+        .left>div:last-child{width:200px;height: 140px; background-color:pink;}
+        
+        footer{width:960px;height: 100px;background-color: darkred;}
+        
+        h2{display: none;}
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <h1>헤더</h1>
+    </header>
+    <section>
+       <h2>영역나누기</h2>
+        <article class="left">
+            <div>
+                <h3>LNB</h3>
+            </div>
+            <div>
+                <h3>AD</h3>
+            </div>
+        </article>
+        <article class="cont">
+            <h3>컨텐츠</h3>
+        </article>
+    </section>
+    <footer><h3>푸터</h3></footer>
+</div>   
+</body>
+</html>
