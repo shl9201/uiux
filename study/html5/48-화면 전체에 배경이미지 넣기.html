@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>화면 전체에 배경이미지 넣기</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body{/*background-color: yellow; background-image: url(images/mono.jpg);background-repeat:repeat*/}
+        p{width:500px;height: 150px;margin:20px auto;color:red;font-weight: 800;font-size: 20px; line-height: 150px;text-align: center;border: 1px solid red;}
+        p.no-repeat{background-image: url(images/pattern.jpg);background-repeat: no-repeat;}
+        p.size-cover{background-image: url(images/naver.png);background-repeat: no-repeat;background-size: cover;}
+        p.size-contain{background-image: url(images/daum.png);background-repeat: no-repeat;background-size: contain;}
+        /* 배경이미지를 요소의 중앙에 오게하는 3가지 방법*/
+        p.position{background-image: url(images/six.png);background-position: -150px -40px;background-position: center;background-position: 50% 50%;}
+        button{background: none;border:none;outline:none; width:18px;height: 18px;background-image: url(images/bul.png);}
+        button:hover{background-position: 0px -18px;}
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <h1 class="text-center">배경이미지 설정</h1>
+    <p class="no-repeat">반복되지 않게 설정</p>
+    <p class="size-cover">배경이미지 크기 설정</p>
+    <p class="size-contain">배경이미지 크기 설정</p>
+    <p class="position">배경이미지 위치 설정</p>
+    
+    <h2 class="text-center">스프라이트 이미지 활용</h2>
+    <p><button></button></p>
+    
+</div>    
+</body>
+</html>
