@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+h1{position: absolute;left:-9999px;}
+section{padding: 20px 0 80px;background-color: #2f2f2f;}
+section>h2{color:#fff;font-weight:500;font-size:22px;}
+section>.iam{width:845px;margin:0 auto;background-color: #fff;}
+.iam{overflow-y:scroll;height:460px; *zoom:1}
+.iam:after{display: block;clear: both;content: ''}
+section>.iam>dl{float: left;position: relative; width:255px;height: 420px;margin-left:20px;margin-top:20px;border:1px solid #dedede;box-sizing: border-box;}
+section>.iam>dl:nth-child(4),section>.iam>dl:nth-child(5),section>.iam>dl:nth-child(6){margin-bottom: 20px;}
+section>.iam>dl>dt:before{display: block;width:122px;height: 122px;margin:20px auto;border-radius: 50%;background-repeat: no-repeat;background-size: cover;content: '';}
+section>.iam>dl:nth-child(1)>dt:before{background-image: url(../images/tellme_03.jpg);}
+section>.iam>dl:nth-child(2)>dt:before{background-image: url(../images/tellme_05.jpg);}
+section>.iam>dl:nth-child(3)>dt:before{background-image: url(../images/tellme_02.jpg);}
+section>.iam>dl:nth-child(4)>dt:before{background-image: url(../images/tellme_06.jpg);}
+section>.iam>dl:nth-child(5)>dt:before{background-image: url(../images/tellme_01.jpg);}
+section>.iam>dl:nth-child(6)>dt:before{background-image: url(../images/tellme_04.jpg);background-size: 200%;background-position: left}
+
+section>.iam>dl>dt{color:#000;font-weight: 600;font-size: 15px;text-align: center;}
+section>.iam>dl>dd{padding:20px;line-height:1.8;text-align: center;}
+section>.iam>dl>dd>span{display: block;position: absolute;left:0px;bottom:10px;width:100%;color: #000;font-weight: 600;font-size: 15px;text-align: center;}

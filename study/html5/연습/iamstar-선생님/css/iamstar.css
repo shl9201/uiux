@@ -1,0 +1,24 @@
+
+@charset "utf-8";
+
+
+#wrap{position: relative;width:706px;height: 602px; margin:50px auto 0;}
+
+header{position: absolute;left:0;top:0;}
+header>h1{/*웹접근성향상을 위해 h1요소 자체를 안드로메다로 보내자*/position:absolute;left:-9999px;}
+header>nav>ul{width:706px;*zoom:1}
+header>nav>ul:after{display: block;clear: both;content: '';}
+header>nav>ul>li{float: left; width:74px;margin-right: 5px; text-indent: -9999px;/*안드로메다기법*/}
+header>nav>ul>li:nth-child(1){background-image: url(../images/th1.jpg);}
+header>nav>ul>li:nth-child(2){background-image: url(../images/th2.jpg);}
+header>nav>ul>li:nth-child(3){background-image: url(../images/th3.jpg);}
+header>nav>ul>li:nth-child(4){background-image: url(../images/th4.jpg);}
+header>nav>ul>li:nth-child(5){background-image: url(../images/th5.jpg);}
+header>nav>ul>li:nth-child(6){background-image: url(../images/th6.jpg);}
+header>nav>ul>li:nth-child(7){background-image: url(../images/th7.jpg);}
+header>nav>ul>li:nth-child(8){background-image: url(../images/th8.jpg);}
+header>nav>ul>li:nth-child(9){margin-right: 0px; background-image: url(../images/th9.jpg)}
+header>nav>ul>li>a{/*앵커는 터치영역 설정에 충실*/display: block; height: 74px;}
+
+section{position: absolute;left:0;top:79px;width:706px;height: 523px;}
+section>.screen{width:706px;height: 523px; text-indent: -9999px; background-image: url(../images/big1.jpg);background-repeat: no-repeat;background-size: cover;}
